@@ -38,7 +38,7 @@ scanf("%d", &pontos1);
   // Área para exibição dos dados da cidade
 densidade1 = populacao1 / area1;
 pibpercapita1 = pib1 / populacao1;
-superpoder1 = (float) + area1 + pib1 + pontos1 + pibpercapita1 - densidade1;
+superpoder1 = (float) populacao1 + area1 + pib1 + pontos1 + pibpercapita1 - densidade1;
 
 printf("------------------------------ \n");
 printf("Carta 1 \n");
@@ -104,6 +104,50 @@ printf("Pontos turísticos: %d \n", pontos1 > pontos2);
 printf("Densidade populacional: %d \n", densidade1 < densidade2);
 printf("PIB per capita: %d \n", pibpercapita1 > pibpercapita2);
 printf("Super poder: %d \n", superpoder1 > superpoder2);
+printf("------------------------------ \n");
+
+if(populacao1 > populacao2) {
+  printf("População da carta 1 venceu!\n");
+} else {
+  printf("População da carta 2 venceu!\n");
+}
+
+if (area1 > area2) {
+  printf("Área da carta 1 venceu!\n");
+} else {
+  printf("Área da carta 2 venceu!\n");
+}
+
+if (pib1 > pib2) {
+  printf("PIB da carta 1 venceu!\n");
+} else {
+  printf("PIB da carta 2 venceu!\n");
+}
+
+if (pontos1 > pontos2) {
+  printf("Pontos turísticos da carta 1 venceu!\n");
+} else {
+  printf("Pontos turísticos da carta 2 venceu!\n");
+}
+
+if (densidade1 < densidade2) {
+  printf("Densidade populacional da carta 1 venceu!\n");
+} else {
+  printf("Densidade populacional da carta 2 venceu!\n");
+}
+
+if (pibpercapita1 > pibpercapita2) {
+  printf("PIB per capita da carta 1 venceu!\n");
+} else {
+  printf("PIB per capita da carta 2 venceu!\n");
+}
+
+if (superpoder1 > superpoder2) {
+  printf("Super poder da carta 1 venceu!\n");
+} else {
+  printf("Super poder da carta 2 venceu!\n");
+}
+
 
 return 0;
 } 
