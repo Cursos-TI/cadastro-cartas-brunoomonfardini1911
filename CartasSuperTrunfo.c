@@ -121,26 +121,32 @@ switch (escolhaatributo1)
 case 1:
   printf("Você escolheu o atributo População!\n");
   resultado1 = populacao1 > populacao2 ? 1 : 0;
+  printf("População carta 1: %lu / População carta 2: %lu\n", populacao1, populacao2);
   break;
 case 2:
   printf("Você escolheu o atributo Área!\n");
   resultado1 = area1 > area2 ? 1 : 0;
+  printf("Área carta 1: %f / Área carta 2: %f\n", area1, area2);
   break;
 case 3:
   printf("Você escolheu o atributo PIB!\n");
   resultado1 = pib1 > pib2 ? 1 : 0;
+  printf("PIB carta 1: %f / PIB carta 2: %f\n", pib1, pib2);
   break;
 case 4:
   printf("Você escolheu o atributo Pontos turísticos!\n");
   resultado1 = pontos1 > pontos2 ? 1 : 0;
+  printf("Pontos turísticos carta 1: %d / Pontos turísticos carta 2: %d\n", pontos1, pontos2);
   break;
 case 5:
   printf("Você escolheu o atributo Densidade populacional (menor vence)!\n");
   resultado1 = densidade1 < densidade2? 1 : 0;
+  printf("Densidade carta 1: %f / Densidade carta 2: %f\n", densidade1, densidade2);
   break;
 case 6:
   printf("Você escolheu o atributo Super poder!\n");
   resultado1 = superpoder1 > superpoder2 ? 1 : 0;
+  printf("Super poder carta 1: %f / Super poder carta 2: %f\n", superpoder1, superpoder2);
   break;
 default:
     printf("Opção inválida!\n");
@@ -180,21 +186,25 @@ if (escolhaatributo1 == escolhaatributo2)
   case 3:
     printf("Você escolheu o atributo PIB!\n");
     resultado2 = pib1 > pib2 ? 1 : 0;
+        printf("PIB carta 1: %f / PIB carta 2: %f\n", pib1, pib2);
     printf("------------------------------ \n");
     break;
   case 4:
     printf("Você escolheu o atributo Pontos turísticos!\n");
     resultado2 = pontos1 > pontos2 ? 1 : 0;
+    printf("Pontos turísticos carta 1: %d / Pontos turísticos carta 2: %d\n", pontos1, pontos2);
     printf("------------------------------ \n");
     break;
   case 5:
     printf("Você escolheu o atributo Densidade populacional (menor vence)!\n");
     resultado2 = densidade1 < densidade2? 1 : 0;
+    printf("Densidade carta 1: %f / Densidade carta 2: %f\n", densidade1, densidade2);
     printf("------------------------------ \n");
     break;
   case 6:
     printf("Você escolheu o atributo Super poder!\n");
     resultado2 = superpoder1 > superpoder2 ? 1 : 0;
+    printf("Super poder carta 1: %f / Super poder carta 2: %f\n", superpoder1, superpoder2);
     printf("------------------------------ \n");
     break;
   default:
